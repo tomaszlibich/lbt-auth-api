@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  auth:
+    container_name: lbt-auth-api
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    restart: unless-stopped
+
+    environment:
+      AWS_REGION: eu-west-2
+
+    env_file:
+      - .env
+
+    networks:
+      - lbt-net
+
+networks:
+  lbt-net:
+    external: true
+    name: lbt-net
