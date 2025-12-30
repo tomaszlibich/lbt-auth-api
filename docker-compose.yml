@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   auth:
     container_name: lbt-auth-api
