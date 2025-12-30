@@ -1,3 +1,3 @@
 git pull origin master
 
-npm run docker:start
+docker compose up -d --build
