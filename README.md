@@ -10,7 +10,7 @@ There are several ways of running the app, depending on environment and needs:
 
 2. By `docker:start`. In that case, `Docker` command is executed under the hood and the application is dockerized. See `docker-compose.yml` for more details.
 
-3. By running `./scripts/.deploy.sh`. This method is recommended after SSH to inside the remote server, as the script also gets the latest from the Github repository, before executing the respective `npm run` command.
+3. By running `./scripts/deploy.sh`. This method is recommended after SSH to inside the remote server, as the script also gets the latest from the Github repository, before executing the respective `npm run` command.
 
 PLEASE NOTE
 
