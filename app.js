@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(middleware.options);
+app.use(middleware.correlation);
 app.use(routes);
 app.use(middleware.handle404);
 
